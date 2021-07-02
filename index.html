@@ -4,31 +4,260 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- style="background-color:#001a00" -->
-    <div id="particles-js">
-         <div id="welcome">
-            <p><strong>Welcome</strong></p>
-          </div>
-    </div>
 
-    <div id="main">
-       
+    <header>
+
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#connect" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I'm 
+            <strong>Debrup</strong>
+        </h1>
+        <p style="font-size: 30px;" class="section__subtitle section__subtitle--intro">Welcome</p>
+        <img src="https://media-exp3.licdn.com/dms/image/C4E03AQHQ-Ih3k8j7Dw/profile-displayphoto-shrink_200_200/0/1594321912617?e=1630540800&v=beta&t=kA3f0FcnP-xaZOyqpwbi2-rbc__Rs4KwAlnokkFuEc4" alt="my pic" width="300" height="300" class="intro__img">
+    </section>
+
+    <!-- My Works -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What i do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Problem Solving</h3>
+                <p>I like to solve problems using data structure and algorithm.
+                    I like to thinking different approach of a problem and solve them.
+                    It gives me more energy and I become more passionate to solving problems. 
+                    I solved about 500+ problems in different platforms like 
+                    Leetcode, Cses, Code-chef, Codeforces , Hackerrank. </p>
+            </div>
+
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>Web development is fun.I recently start web development 
+                    to explore different technologies.I use Html5, css3,
+                     Javascript, Bootstrap4 in front end.And Node js,
+                    MongoDb, Sql in backend.And also use Django framework.
+                    I build some website for playing puzzle games.    
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Machine Learning</h3>
+                <p>I like the power of Ai and Machine learning.I am passionate 
+                    and dedicated in the field of data science.I do data analysis
+                     using python and use tools like numpy, pandas , seaborn and 
+                     matplotlib.I use sklearn for model building.
+                </p>
+            </div>
+
+        </div>
+
+        <a  class="btn" href="https://github.com/debrup416/debrup" target="__blank">View Source Code of My Website</a>
+
+    </section>
+
+    <!-- About Me -->
+
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">About Me.</h2>
+        <p class="section__subtitle section__subtitle--about">My breif introduction.</p>
+
+        <div class="about-me__body">
+            <p>
+                <strong>
+                    <em>
+                    I love programming. Especially problem solving using data structure and algorithm,
+                    Web Development and Machine learnig.Currently i am pursuing b.tech degree in electronics 
+                    and communication engineering from Maulana Abul Kalam Azad University of Technology.Outside 
+                    prommaing i like photography, biking, swiming and puzzle solving. 
+                    </em>
+                </strong>
+            </p>
+         
+        </div>
+        <img src="https://media-exp3.licdn.com/dms/image/C4E03AQHQ-Ih3k8j7Dw/profile-displayphoto-shrink_200_200/0/1594321912617?e=1630540800&v=beta&t=kA3f0FcnP-xaZOyqpwbi2-rbc__Rs4KwAlnokkFuEc4" width="250" height="250" alt="Me" class="about-me__img">
+
+    </section>
+
+    <!-- My work -->
+
+    <section class="my-work" id="work">
+
+        <h2 class="section__title section__title--work">My Projects</h2>
+        <p class="section__subtitle section__subtitle--work">Some of my project.</p>
+
+        <div class="portfolio">
+
+            
+            <section>
+                <a href="https://github.com/debrup416/Stock-Price-Prediction" target="__blank" class="portfolio__item">
+                    <img src="asset/s3.jpg" alt="oops1" class="portfolio__img" width="300" height="250">
+                </a>
+                <h3 class="portfolio__describtion">Stock price prediction</h3>
+            </section>
+
+
+            <section>
+                <a href="https://github.com/debrup416/Survival-Prediction-In-Titanic-Passenger" target="__blank" class="portfolio__item">
+                    <img src="https://camo.githubusercontent.com/647077dc387e146a6778c4fd059a97f283ae5cf4dcb2904705bb341f3ef6fb69/68747470733a2f2f36382e6d656469612e74756d626c722e636f6d2f33386165383937663230363330656638386536343834646561303064623362332f74756d626c725f6d6d3866686974523375317277777667396f315f3530302e676966" alt="oops1" class="portfolio__img" width="300" height="250">
+                </a>
+                <h3 class="portfolio__describtion">Survival-Prediction in Titanic</h3>
+            </section>
+
+            <section>
+                <a href="https://github.com/debrup416/Competitive-Programming" target="__blank" class="portfolio__item">
+                    <img src="asset/p3.jpg" alt="oops1" class="portfolio__img" width="300" height="250">
+                </a>
+                <h3 class="portfolio__describtion">Programming</h3>
+            </section>
+
+            <section>
+                <a href="#" class="portfolio__item">
+                    <img src="asset/d2.jpeg" alt="oops1" class="portfolio__img" width="300" height="250">
+                </a>
+                <h3 class="portfolio__describtion">Coming Soon....</h3>
+            </section>
+
+            <section>
+                <a href="#" class="portfolio__item">
+                    <img src="asset/d2.jpeg" alt="oops1" class="portfolio__img" width="300" height="250">
+                </a>
+                <h3 class="portfolio__describtion">Coming Soon....</h3>
+            </section>
+
+            <section>
+                <a href="#" class="portfolio__item">
+                    <img src="asset/d2.jpeg" alt="oops1" class="portfolio__img" width="300" height="250">
+                </a>
+                <h3 class="portfolio__describtion">Coming Soon....</h3>
+            </section>
+           
+            
+            
+<!--             
+              <a href="https://github.com/debrup416/Survival-Prediction-In-Titanic-Passenger" target="__blank" class="portfolio__item">
+                <img src="https://camo.githubusercontent.com/647077dc387e146a6778c4fd059a97f283ae5cf4dcb2904705bb341f3ef6fb69/68747470733a2f2f36382e6d656469612e74756d626c722e636f6d2f33386165383937663230363330656638386536343834646561303064623362332f74756d626c725f6d6d3866686974523375317277777667396f315f3530302e676966" alt="Opps" class="portfolio__img" width="250" height="200">   
+             </a>
         
-    </div>
- 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+              <a href="#" class="portfolio__item">
+                <img src="asset/dd1.jpeg" alt="oops1" class="portfolio__img" width="200" height="200">
+              </a>
+            
+              <a href="#" class="portfolio__item">
+                <img src="asset/dd2.jpeg" alt="oops1" class="portfolio__img" width="200" height="200">
+              </a>
+            
+              <a href="#" class="portfolio__item">
+                <img src="asset/d2.jpeg" alt="oops1" class="portfolio__img" width="200" height="200">
+              </a>
+           
+              <a href="#" class="portfolio__item">
+                <img src="asset/d1.jpeg" alt="oops1" class="portfolio__img" width="200" height="200">
+              </a>
+ -->
 
-    <script>
-          particlesJS.load('particles-js','particles.json',function(){
-            console.log("Loadded..");
-        })
-    </script>
-      
-        
+        </div>
 
+    </section>
+    
+
+    <footer class="footer" id="connect">
+        <a href="https://www.linkedin.com/in/debrup-dey-773997188/" target="__blank" class="footer__link">Feel free to connect with me.</a>
+        <ul class="social-list">
+
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/debrup-dey-773997188/" target="__blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+
+
+            <li class="social-list__item">
+                <a class="social-list__link" href = "mailto: 1debrupdey1@gmail.com.com" target="__blank">
+                    <span class="iconify" data-icon="logos:google-gmail" data-inline="false"></span>
+                </a>
+            </li>
+
+
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/debrup416" target="__blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+           
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://leetcode.com/writtensyntax/" target="__blank">
+                    <iconify-icon data-icon="simple-icons:leetcode"></iconify-icon>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.hackerrank.com/writtensyntax" target="__blank">
+                    <i class="fab fa-hackerrank"></i>
+                </a>
+            </li>
+
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.codechef.com/users/written_syntax" target="__blank">
+                    <span class="iconify" data-icon="simple-icons:codechef" data-inline="false"></span>
+                </a>
+            </li>
+
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://cses.fi/problemset/user/42879/" target="__blank">
+                    <img style="margin-top: -32px;" src="https://cses.fi/logo.png?1" height="25px" width="35px">
+                </a>
+            </li>
+           
+        </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+  
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
